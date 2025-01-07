@@ -150,19 +150,24 @@ function startGame(){
         count++; // 정상 입력 시 카운트 증가
 
         // 정답 판별 -> break
-        if(){
+        if(value === answer){
             alert(`정답!! ${answer} / 시도 횟수 : ${count}`);
-            return;
+            break;
         }
         
-        // UP / DOWN (단, 7회째면 실패)    
-        if(value > 1 || value < 200){
-            alert(`DOWN (현재 ${count})회`)
+        // UP / DOWN (단, 7회째면 실패)   
+        
+        if(count === 7){
+            alert(`7회 입력- 실패!(정답:${answer})`);
+            break;
         }
-        if(){
-            alert(`UP (현재 ${count})회`)
+        
+        if(value >  answer){
+            alert(`DOWN (현재 ${count})회`);
+        } else{
+            alert(`UP (현재 ${count})회`);
         }
-
+       
         
         
 
