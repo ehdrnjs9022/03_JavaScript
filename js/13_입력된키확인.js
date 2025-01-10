@@ -1,6 +1,6 @@
 
 // 준비한 이미지 파일명을 배열에 저장
-const images = ["짱구1.gif", "짱구2.gif", "짱구3.gif", "짱구4.gif", "짱구5.gif",];
+const images = ["짱구1.gif", "짱구2.gif", "짱구3.gif", "짱구4.gif", "짱구5.gif"];
 
 
 // 클래스가 key인 요소를 모두 얻어와 keys 변수에 저장
@@ -33,9 +33,8 @@ document.addEventListener("keydown", function(e){
     }
 
     // 눌러진 키의 배경 이미지를 변경
-    keys[index].style.backgroundImages
-    = `url('../images ${images[index]}')`;
-    
+    keys[index].style.backgroundImage
+    = `url('../images/${images[index]}')`;
 });
 
 /* 키를 땠을 때 배경 이미지 지우기 */
@@ -62,8 +61,8 @@ document.addEventListener("mousemove", function(e){
     
     //console.log(e);
 
-    cursorImage.style.left =`${e.pageX + 0}px`;
-    cursorImage.style.top  =`${e.pageY + 5}px`;
+    cursorImage.style.left =`${e.pageX - 5}px`;
+    cursorImage.style.top  =`${e.pageY + 10}px`;
 
 
 });
