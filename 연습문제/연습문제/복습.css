@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    width: 650px;
+    margin: 30px;
+    
+
+}
+
+.container > section:last-child{
+    border-left: 2px solid gray;
+}
+.container > section{
+    padding: 10px;
+}
+
+
+.main2 > div{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.box1{
+    border-bottom: 2px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 28px;
+    width: 450px;
+    height: 100px;
+}
+
+.box2{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 20px 0
+    
+   
+}
+
+#addBtn{
+    width: 450px;
+    cursor: pointer;
+}
+
+#resetBtn{
+    width: 450px;
+    cursor: pointer;
+}
+
+
+.number{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
