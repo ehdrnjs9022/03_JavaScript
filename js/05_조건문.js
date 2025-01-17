@@ -121,8 +121,8 @@ function ageCheck2(){
 
 
         // id가 inputA, inputB인 요소를 얻어와
-        const inputA = document.getElementById("inputA");
-        const inputB = document.getElementById("inputB");
+        const inputA = document.getElementById("#inputA");
+        const inputB = document.getElementById("#inputB");
 
         //1) A, B 중 하나라도 입력되지 않을 경우
         // -> "입력되지 않은 값이 존재합니다"
