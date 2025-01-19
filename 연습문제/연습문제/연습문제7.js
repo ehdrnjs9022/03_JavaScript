@@ -52,7 +52,6 @@ btn3.addEventListener("click", ()=>{
     },2000);/* clearInterval(currentInterval); */
 
 
-
   
  /*    currentInterval = setInterval(()=>{
       count++;
